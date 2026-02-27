@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="100" y1="60" x2="1100" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1120"/>
+      <stop offset="1" stop-color="#111E33"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 140) rotate(24) scale(300 240)">
+      <stop stop-color="#D9B45F" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#D9B45F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 520) rotate(22) scale(330 240)">
+      <stop stop-color="#5A77C3" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#5A77C3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowA)"/>
+  <rect width="1200" height="630" fill="url(#glowB)"/>
+
+  <g stroke="#D9B45F" stroke-width="2" opacity="0.14" transform="translate(130 78)">
+    <path d="M0 0L14 -18L28 0M14 -18V18"/>
+    <path d="M90 -4L90 24M90 -4L106 10M90 10L74 24"/>
+    <path d="M180 -6L202 -6L191 8L202 22L180 22"/>
+    <path d="M270 -8L284 16L270 40M284 16L252 16"/>
+  </g>
+
+  <g transform="translate(130 184)">
+    <rect x="0" y="0" width="940" height="264" rx="30" fill="#050A13" fill-opacity="0.32" stroke="#D9B45F" stroke-opacity="0.33"/>
+    <text x="72" y="112" fill="#F1CE7B" font-size="88" font-family="Cinzel, Georgia, serif" font-weight="600">Gandalf</text>
+    <text x="72" y="168" fill="#C6D0E4" font-size="38" font-family="Inter, Segoe UI, sans-serif" font-weight="500">Personal sage</text>
+    <text x="72" y="220" fill="#DCE2F0" font-size="27" font-family="Inter, Segoe UI, sans-serif" font-weight="400">
+      Raphael Guerra's personal AI guide for planning, coding, and shipping with care.
+    </text>
+  </g>
+</svg>

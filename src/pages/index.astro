@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FeatureGrid from '../components/FeatureGrid.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import Nav from '../components/Nav.astro';
+import PromptExamples from '../components/PromptExamples.astro';
+import Section from '../components/Section.astro';
+import { siteConfig } from '../site.config';
+---
+
+<BaseLayout>
+  <Nav nav={siteConfig.nav} siteName={siteConfig.siteName} />
+  <main>
+    <Hero
+      title={siteConfig.siteName}
+      tagline={siteConfig.tagline}
+      description={siteConfig.description}
+      links={siteConfig.links}
+    />
+
+    <Section id="what-gandalf-is" title="What Gandalf is" intro={siteConfig.whatIs} />
+
+    <Section id="what-i-do" title="What Gandalf does">
+      <FeatureGrid features={siteConfig.features} />
+    </Section>
+
+    <Section id="how-it-works" title="How it works">
+      <ol class="grid gap-3 sm:gap-4 sm:grid-cols-2">
+        {
+          siteConfig.howItWorks.map((step, index) => (
+            <li class="rounded-xl border border-white/15 bg-white/5 p-4 text-slate-100 backdrop-blur-sm sm:p-5">
+              <p class="text-xs uppercase tracking-[0.22em] text-gold/75 sm:text-sm">Step {index + 1}</p>
+              <p class="mt-1 text-sm leading-relaxed sm:text-base">{step}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </Section>
+
+    <Section id="prompts" title="Prompt examples">
+      <PromptExamples prompts={siteConfig.prompts} />
+    </Section>
+  </main>
+
+  <Footer links={siteConfig.links} note={siteConfig.footerNote} />
+</BaseLayout>
