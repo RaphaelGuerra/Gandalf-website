@@ -1,5 +1,18 @@
 # Gandalf Website
 
+Last updated: 2026-03-02
+
+## Table of Contents
+
+<!-- TOC start -->
+- [Stack](#stack)
+- [Local development](#local-development)
+- [Build + preview](#build--preview)
+- [Content source of truth](#content-source-of-truth)
+- [Cloudflare Pages settings](#cloudflare-pages-settings)
+- [Notable files](#notable-files)
+<!-- TOC end -->
+
 Single-page landing site for **Gandalf** (Raphael Guerra's personal AI sage), built with Astro + Tailwind and deployed as static output.
 
 ## Stack
