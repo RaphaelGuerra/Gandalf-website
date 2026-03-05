@@ -13,6 +13,9 @@ Last updated: 2026-03-05
 - [Notable files](#notable-files)
 <!-- TOC end -->
 
+[![Lint](https://github.com/RaphaelGuerra/Gandalf-website/actions/workflows/lint.yml/badge.svg)](https://github.com/RaphaelGuerra/Gandalf-website/actions/workflows/lint.yml)
+[![Security](https://github.com/RaphaelGuerra/Gandalf-website/actions/workflows/security.yml/badge.svg)](https://github.com/RaphaelGuerra/Gandalf-website/actions/workflows/security.yml)
+
 Single-page landing site for **Gandalf** (Raphael Guerra's personal AI sage), built with Astro + Tailwind and deployed as static output.
 
 ## Stack
